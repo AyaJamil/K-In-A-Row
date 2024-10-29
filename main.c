@@ -396,7 +396,3 @@ void print_board(char board[][MAX_COLS], int rows, int cols) {
 
 
 
-void print_win_msg(char player_symbol, int turn_num) {
-    printf("Player %c won in %d moves!\n", player_symbol, turn_num);
-}
-
