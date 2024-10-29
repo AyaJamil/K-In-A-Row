@@ -123,12 +123,17 @@ int check_if_k1_valid(int numofrows, int numofcolumns){
     return k;
 }
 
-int start_game(char board[][MAX_COLS],int numrows,int numofcol,int k,bool END){
-    if(END){
-        return 0;
+int start_game(char board[][MAX_COLS], int numrows, int numofcol, int k, bool END) {
+    // Check if the game should end before starting
+    if (END) {
+        return 0; // Exit if the game is set to end
     }
+
+    // Call function for Player Y to take their turn (assumed function exists)
+    // - Passes the game board, rows, columns, win condition (k), and initial move (0)
     y_to_play(board, numrows, numofcol, k, 0);
-    return 0;
+
+    return 0; // Return 0 to indicate successful function execution
 }
 
 bool y_to_play(char board[][MAX_COLS],int numofrows,int numofcol,int k,int ap){
