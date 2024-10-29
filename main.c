@@ -393,7 +393,6 @@ void print_board(char board[][MAX_COLS], int rows, int cols) {
     }
 }
 
-
 //print if draw
 void print_draw_msg() {
     printf("DRAW!\n");
